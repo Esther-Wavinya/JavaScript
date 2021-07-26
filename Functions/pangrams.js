@@ -98,3 +98,11 @@ isPangram('the five boxing wizards jump quickly');        //true
 isPangram('the five boxing wizards jump quickl');        //false
 isPangram('the five boxing wizards jump quckly');        //true
 isPangram('the five boxing wizards jump quicasdkly');        //true
+
+
+
+
+
+
+
+
