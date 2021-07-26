@@ -196,7 +196,7 @@ isAngry = 1239;  // changed boolean to a number. why people don't like in JS and
 let firstName = "Ziggy"; //Double quotes work
 let msg = "Please do not feed the chimps!";
 let animal = 'Dumb Octopus'; // So do single quotes
-let bad = "this is wrong'; // THIS DOES NOT WORK
+//let bad = "this is wrong'; // THIS DOES NOT WORK
 
 let firstName = "Ziggy";
 firstName  //"Ziggy"
