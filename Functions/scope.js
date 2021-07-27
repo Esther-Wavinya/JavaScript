@@ -106,7 +106,225 @@ bird;                  //'mandarin duck'
 
 
 
+//BLOCK SCOPE
+let radius = 8;
+
+if(radius > 0) {
+  const PI = 3.14;
+  let circ = 2 * PI * radius;                //PI & circ are scoped to the BLOCK
+}
+
+console.log(radius);     //8
+console.log(PI);      //NOT DEFINED
+console.log(circ);         //NOT DEFINED
+
+
+
+
+//let
+if(true) {
+  let animal = 'eel';      //this is a block
+}
+console.log(animal);             //error - animal is not defined
+
+
+
+
+
+
+
+
+
+
+//const
+if(true) {
+  const animal = 'eel';      
+  console.log(animal);          //this is a block
+}
+console.log(animal);               //error - animal is not defined
+
+
+
+
+
+
+
+
+
+
+//var
+
+if(true) {
+  var animal = 'eel';      
+  console.log(animal);          
+}
+console.log(animal);        /*  reason why const and let are used in stead of var for scoping purposes
+
+eel
+eel
+*/
+
+
+
+
+
+
+
 //
+let animals = ['grizzly bear', 'panda bear', 'spectacled bear'];
+for (var i = 0; i < animals.length; i++) {
+  console.log(i, animals[i])
+}                                /*
+
+0 "grizzly bear"
+1 "panda bear"
+2 "spectacled bear"
+
+*/
+
+
+
+
+//using var
+let animals = ['grizzly bear', 'panda bear', 'spectacled bear'];
+var i = 10;
+for (var i = 0; i < animals.length; i++) {
+  console.log(i, animals[i])
+} 
+console.log(i)                               /*  makes it hard to know where i stops with var
+
+0 "grizzly bear"
+1 "panda bear"
+2 "spectacled bear"
+3
+
+*/
+
+
+
+
+
+
+
+//using let
+let animals = ['grizzly bear', 'panda bear', 'spectacled bear'];
+let i = 10;
+for (let i = 0; i < animals.length; i++) {
+  console.log(i, animals[i])
+} 
+console.log(i)                               /* 
+
+0 "grizzly bear"
+1 "panda bear"
+2 "spectacled bear"
+10
+
+*/
+
+
+
+
+
+
+//
+let animals = ['grizzly bear', 'panda bear', 'spectacled bear'];
+//let i = 10;
+for (const i = 0; i < animals.length; i++) {
+  console.log(i, animals[i])
+} 
+console.log(i)              //error - assignment to const variable
+
+
+
+
+
+
+//
+//[1,3,5]
+//[2,6,10]
+function doubleArr(arr) {
+  const result = [];                 //const scoped to the entire function
+  for(let num of arr) {
+    let double = num * 2;
+    result.push(double);
+  }
+  return result;
+}                 
+doubleArr([[1,2,3])       //(3) [2, 4, 6]
+
+
+  
+
+
+
+
+//use console.log
+//[1,3,5]
+//[2,6,10]
+function doubleArr(arr) {
+  const result = [];                 //const scoped to the entire function
+  for(let num of arr) {
+    let double = num * 2;
+    result.push(double);
+  }
+  console.log(double);
+  return result;
+}                
+doubleArr([[1,2,3])       //reference error - double is not defined
+
+
+
+
+
+
+
+
+
+//use var
+//[1,3,5]
+//[2,6,10]
+function doubleArr(arr) {
+  const result = [];                 //const scoped to the entire function
+  for(let num of arr) {
+    var double = num * 2;
+    result.push(double);
+  }
+  console.log(double);                 //no access to double in the result due to blocl scope
+  return result;
+}                
+doubleArr([[1,2,3])       //6
+//(3) [2, 4, 6]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
