@@ -250,7 +250,7 @@ function doubleArr(arr) {
   }
   return result;
 }                 
-doubleArr([[1,2,3])       //(3) [2, 4, 6]
+doubleArr([1,2,3]);       //(3) [2, 4, 6]
 
 
   
@@ -270,7 +270,7 @@ function doubleArr(arr) {
   console.log(double);
   return result;
 }                
-doubleArr([[1,2,3])       //reference error - double is not defined
+doubleArr([1,2,3]);       //reference error - double is not defined
 
 
 
@@ -292,7 +292,7 @@ function doubleArr(arr) {
   console.log(double);                 //no access to double in the result due to blocl scope
   return result;
 }                
-doubleArr([[1,2,3])       //6
+doubleArr([1,2,3]);         //6
 //(3) [2, 4, 6]
 
 
