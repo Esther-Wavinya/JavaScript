@@ -14,7 +14,7 @@ const divide = function (x, y) {
   return x / y;
 }
 
-//We can store functions in an array!
+//We can store functions in an array! arrays are indexed
 const operations = [add, subtract, multiply, divide];
 
 //Loop over all the functions in operations
