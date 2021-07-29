@@ -28,6 +28,9 @@ console.log(animal); //'eel'
 // console.log(i) 
 
 
+
+//[1,3,5]
+//[2,6,10]
 function doubleArr(arr) {
   const result = []; //scoped to the doubleArr function
   for (let num of arr) {
