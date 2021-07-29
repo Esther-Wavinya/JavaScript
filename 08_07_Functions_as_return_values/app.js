@@ -19,10 +19,18 @@ const halve = multiplyBy(0.5);
 halve(5); //2.5
 halve(100); //50
 
+
+
+
+
+
+
+
+
 // This function also acts as a "function factory"
 function makeBetweenFunc(x, y) {
   return function (num) {
-    return num >= x && num <= y;
+    return num >= x && num <= y;      //boolean expression returns true or false
   };
 }
 // This function checks if a value is between 0 and 18
