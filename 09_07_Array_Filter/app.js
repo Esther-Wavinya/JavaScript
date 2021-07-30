@@ -1,8 +1,19 @@
+//Creates a new array with all elements that pass the test implemented by the provided function
+
 const nums = [34, 35, 67, 54, 109, 102, 32, 9];
 
+//our callback returns true or false. If it returns true, it is added to the filtered array
 const odds = nums.filter(n => n % 2 === 1);
+odds;       //(4) [35, 67, 109, 9]
+
 const evens = nums.filter(n => n % 2 === 0);
-const bigNums = nums.filter(n => n > 50);
+evens;      //(4) [34, 54, 102, 32]
+
+const bigNums = nums.filter(n => n > 50); 
+bigNums;    //(4) [67, 54, 109, 102]   
+
+
+
 
 
 const books = [{
@@ -65,15 +76,18 @@ const books = [{
 //All books rated over 4.3:
 const goodBooks = books.filter(b => b.rating > 4.3);
 
+
 // All books with fantasy as a genre:
 const fantasyBooks = books.filter(book => (
   book.genres.includes('fantasy')
 ))
 
+
 // all books that are either short stories or essays:
 const shortForm = books.filter(book => (
   book.genres.includes('short stories') || book.genres.includes('essays')
 ))
+
 
 // Simple search functionality:
 const query = 'The';
@@ -81,3 +95,4 @@ const results = books.filter(book => {
   const title = book.title.toLowerCase();
   return title.includes(query.toLowerCase())
 })
+
