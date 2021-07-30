@@ -8,13 +8,19 @@ const votes = ['y', 'y', 'n', 'y', 'n', 'y', 'n', 'y', 'n', 'n', 'n', 'y', 'y'];
 //     tally[val] = 1;
 //   }
 //   return tally;
-// }, {})
+// }, {});
+//results;       //{y: 7, n: 6}
 
 // The shorter version:
 const results = votes.reduce((tally, val) => {
   tally[val] = (tally[val] || 0) + 1;
   return tally;
 }, {});
+results;       //{y: 7, n: 6}
+
+
+
+
 
 const books = [{
     title: 'Good Omens',
@@ -79,7 +85,7 @@ const books = [{
 ]
 // To group books by rating: 
 const groupedByRatings = books.reduce((groupedBooks, book) => {
-  const key = Math.floor(book.rating);
+  const key = Math.floor(book.rating);  //chopping off decimal
   if (!groupedBooks[key]) groupedBooks[key] = [];
   groupedBooks[key].push(book)
   return groupedBooks;
