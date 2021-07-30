@@ -1,19 +1,29 @@
+//EVERY Tests whether all elements in the array pass the provided function. It returns a Boolean value
+
 const words = ["dog", 'dig', 'log', 'bag', 'wag'];
 
 //Is every word 3 characters long?
 const all3Letters = words.every(word => word.length === 3);
+all3Letters;    //true
 
 // Do all words end in 'g'?
 const allEndInG = words.every(word => {
-  const last = word.length - 1;
+  const last = word.length - 1;   //last index
   return word[last] === 'g'
 });
+allEndInG;       //true
 
+
+
+//SOME - similar to every, but returns true if ANY of the array elements pass the test function
 //Does at least 1 book start with 'd'?
 const someStartWithD = words.some(word => word[0] === 'd');
+someStartWithD;           //true
 
 // Do all words start with 'd'?
 const allStartWithD = words.every(word => word[0] === 'd');
+allStartWithD;        //false
+
 
 const books = [{
     title: 'Good Omens',
@@ -72,6 +82,9 @@ const books = [{
 ]
 //Are all books rated 3.5 or higher?
 const allGoodBooks = books.every(book => book.rating > 3.5);
+allGoodBooks;      //true
+
 
 //Do any books have 2 authors?
-const any2Authors = books.some(book => book.authors.length === 2)
+const any2Authors = books.some(book => book.authors.length === 2);
+any2Authors;       //true
