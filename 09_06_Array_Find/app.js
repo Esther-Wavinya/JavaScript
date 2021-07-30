@@ -1,3 +1,4 @@
+//returns the value of the first element in the array that satisfies the provided testing function
 let movies = [
   "The Fantastic Mr. Fox",
   "Mr. and Mrs. Smith",
@@ -8,11 +9,19 @@ let movies = [
 // Find first movie that includes 'Mrs' in its title:
 const movie = movies.find(movie => {
   return movie.includes('Mrs');
-})
+})  
+movie;          //"Mr. and Mrs. Smith"
+
+
+
 
 //Find first movie that begins with 'Mrs':
 const movie2 = movies.find(m => m.indexOf("Mrs") === 0);
+movie2;        //"Mrs. Doubtfire"
 
+
+
+//
 const books = [{
     title: 'Good Omens',
     authors: ['Terry Pratchett', 'Neil Gaiman'],
