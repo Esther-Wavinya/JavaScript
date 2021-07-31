@@ -30,6 +30,7 @@ gold; //'Eliud Kipchoge'
 silver; //'Feyisa Lelisa'
 bronze; //'Galen Rupp'
 
+//commas for skipping elements
 const [first, , , fourth] = raceResults;
 first; //'Eliud Kipchoge'
 fourth; //'Ghirmay Ghebreslassie'
@@ -40,7 +41,7 @@ const [winner, ...others] = raceResults;
 winner; //'Eliud Kipchoge'
 others; //["Feyisa Lelisa", "Galen Rupp", "Ghirmay Ghebreslassie", "Alphonce Simbu", "Jared Ward"]
 
-//skip elements
+//skip elements using commas
 const [winner, , ...others] = raceResults;
 winner; //'Eliud Kipchoge'
 others;    //"Galen Rupp", "Ghirmay Ghebreslassie", "Alphonce Simbu", "Jared Ward"]
