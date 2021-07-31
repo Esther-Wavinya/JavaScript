@@ -43,7 +43,6 @@ function giveMeFour(a, b, c, d) {
   console.log('c', c)
   console.log('d', d)
 }
-
 const colors = ['red', 'orange', 'yellow', 'green']
 
 // Without spread:
