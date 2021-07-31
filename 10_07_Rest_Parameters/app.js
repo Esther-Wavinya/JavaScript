@@ -1,4 +1,4 @@
-//REST PARAMS collects all remaining arguments into an actual array
+//REST PARAMS collects all remaining arguments into an actual array. combines them 
 
 // OLD WAY!
 // function sum() {
