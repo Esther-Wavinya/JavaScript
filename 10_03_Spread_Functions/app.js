@@ -24,13 +24,15 @@ const nums2 = [ 4, 5, 6];
 
 //spread in object literals
 //Copies properties from one object into another object literal
-const feline = { legs: 4, family: 'felidae' };
-const canline = { family: 'Canline', furry: true};
+const feline = { legs: 4, family: 'Felidae' };
+const canine = { family: 'Caninae', furry: true};
 
-const dog = { ...canline, isPet: true };
+const dog = { ...canine, isPet: true };   //{family: "Caninae", furry: true, isPet: true }
 
 
-const lion = { ...feline, genius: 'Panthera' };
+const lion = { ...feline, genius: 'Panthera' };    //{legs: 4, family: "Felidae", genius: "Panthera" }
+
+const catDog = { ...feline, ...canine };    //{legs: 4, family: "Caninae", furry: true }
 
 
 
