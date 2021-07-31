@@ -25,6 +25,7 @@ inverts;     //["fire coral", "moon jelly", "giant african snail", "banana slug"
 
 //Spread is mostly used to make a copy of an array
 const cephCopy = [...cephalopods];
-//["dumbo octopus", "humboldt squid", "flamboyant cuttlefish"]
+cephCopy;      //["dumbo octopus", "humboldt squid", "flamboyant cuttlefish"]
+
 
 
