@@ -25,7 +25,7 @@ const person = {
     console.log(`${fullName} is a person!`)
   },
   laugh: () => {
-    //Arrow functions don't get their 'own' this.
+    //Arrow functions don't get their 'own' this. reason why we don't use arrow functions as methods in an object.
     console.log(this);
     console.log(`${this.nickName} says HAHAHAHAH`)
   }
