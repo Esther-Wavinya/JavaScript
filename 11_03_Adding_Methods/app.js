@@ -11,5 +11,8 @@ const math = {
   }
 }
 
+//To execute addition
+math.add(5, 6);   //11
+
 // To execute multiply:
 math.multiply(5, 9); //45
