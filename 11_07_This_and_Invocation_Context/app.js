@@ -1,4 +1,4 @@
-//The value of THIS depends on the invocation context of the function it is used in.
+//The value of THIS depends on the invocation context of the function it is used in. The value of THIS will chnage depending on how the function is actually executed not just where you write it.
 
 function sayHi() {
   console.log("HI")
@@ -30,6 +30,7 @@ const person = {
     console.log(`${this.nickName} says HAHAHAHAH`)
   }
 }
+
 
 // INVOCATION CONTEXT MATTERS!!!
 person.printBio(); //THIS refers to the person object
