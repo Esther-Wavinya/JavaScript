@@ -1,4 +1,8 @@
 //annoying phrases
+//method called stop which is a function
+//Add a method called pickphrase
+//In here you going to reference it.this.phrase
+
 
 const annoyer = {
   phrases: ["literally", "cray cray", "I can't even", "Totes!", "YOLO", "Can't Stop, Won't Stop"],
