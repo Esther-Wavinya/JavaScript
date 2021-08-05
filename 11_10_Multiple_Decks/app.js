@@ -1,4 +1,6 @@
 // THIS FUNCTION RETURNS A NEW DECK EVERYTIME WE CALL IT!
+//creating multiples
+
 const makeDeck = () => {
   return {
     deck: [],
