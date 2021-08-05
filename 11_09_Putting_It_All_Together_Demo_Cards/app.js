@@ -2,30 +2,34 @@
 // WRITING EVERYTHING USING FUNCTIONS
 // **********************************
 function initializeDeck() {
-  const deck = [];
+  const deck = []; //empty deck array
+  //looping over suits & values
   const suits = ['hearts', 'diamonds', 'spades', 'clubs'];
   const values = '2,3,4,5,6,7,8,9,10,J,Q,K,A';
   for (let value of values.split(',')) {
     for (let suit of suits) {
       deck.push({
         value,
-        suit
+        suit  //shorthand 
       })
     }
   }
   return deck;
 }
 
+
+//create a deck and being able to draw a card
 function drawCard(deck, drawnCards) {
   const card = deck.pop();
-  drawnCards.push(card);
+  drawnCards.push(card);    //returning all cards drawn
   return card;
 }
 
+//Drawing multiple cards
 function drawMultiple(numCards, deck, drawnCards) {
   const cards = [];
   for (let i = 0; i < numCards; i++) {
-    cards.push(drawCard(deck, drawnCards));
+    cards.push(drawCard(deck, drawnCards));  //returning all cards drwan
   }
   return cards;
 }
@@ -35,7 +39,7 @@ function shuffle(deck) {
   for (let i = deck.length - 1; i > 0; i--) {
     //pick random index before current element
     let j = Math.floor(Math.random() * (i + 1));
-    //swap
+    //swap using destructuring
     [deck[i], deck[j]] = [deck[j], deck[i]];
   }
   return deck;
