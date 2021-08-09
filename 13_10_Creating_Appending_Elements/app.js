@@ -5,7 +5,7 @@ newImg.src = 'https://images.unsplash.com/photo-1504006833117-8886a355efbf?ixlib
 // Change its width:
 newImg.style.width = "300px";
 
-//Add it to the end of the body:
+//Add it to the end of the body: append it to the body
 document.body.appendChild(newImg);
 
 
@@ -16,7 +16,7 @@ newLink.innerText = 'Mr. Bubz Video! CLICK MEEE';
 // Set its src:
 newLink.href = 'https://www.youtube.com/watch?v=QQNL83fhWJU';
 
-// Select the first paragraph:
+// Select the first paragraph: to append it there
 const firstP = document.querySelector('p');
 // Add the link as a child of the paragraph:
 firstP.appendChild(newLink);
