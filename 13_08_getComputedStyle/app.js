@@ -1,10 +1,16 @@
+//getComputedStyles is used to access all styles used 
+
 const h1 = document.querySelector('h1');
 
+//inline styles suck - they override the rest
 // style property only contains INLINE styles...
 // Even though we gave the h1 a purple color, we still get:
 h1.style.color; //"" 
 // Same with any property we did not set inline:
 h1.style.fontSize; //""
+
+
+
 
 // We can use getComputedStyle to figure out the ACTUAL styles that are applying:
 const compStyles = getComputedStyle(h1);
