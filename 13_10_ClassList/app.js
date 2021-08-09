@@ -1,9 +1,11 @@
 const todo = document.querySelector('#todos .todo');
 
 // Setting styles one at a time is not ideal:
-// todo.style.color = 'gray';
-// todo.style.textDecoration = 'line-through';
-// todo.style.opacity = '50%'
+todo.style.color = 'gray';
+todo.style.textDecoration = 'line-through';
+todo.style.opacity = '50%'
+
+
 
 
 // We can use a class instead!
@@ -11,7 +13,11 @@ const todo = document.querySelector('#todos .todo');
 
 // OPTION 1 - using setAttribute
 //This adds the class 'done', but it overwrites any existing classes...
-// todo.setAttribute('class', 'done');
+todo.setAttribute('class', 'done');
+
+
+
+
 
 // OPTION 2 - classList
 // We can use the classList property and it's methods to add,remove, and toggle classes!
