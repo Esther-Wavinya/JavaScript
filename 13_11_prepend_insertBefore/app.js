@@ -3,7 +3,10 @@ const newLI = document.createElement('li');
 newLI.innerText = 'I AM A NEW LIST ITEM!';
 
 //prepend will add newLI as the FIRST child of parentUL
-parentUL.prepend(newLI) //Doesn't work in IE!
+parentUL.prepend(newLI) //Doesn't work in IE-internet explorer!
+
+
+
 
 //We can also insert something BEFORE another element, using insertBefore.
 // First, select the element to insert before:
