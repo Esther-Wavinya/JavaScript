@@ -28,4 +28,6 @@ const makeRant = (phrase, el) => {
 console.log('HELLO!');
 
 makeRant('I hate mayonnaise', document.body);
-// makeRant('if you have to cough, please cover your mouth', document.body);
+
+//
+makeRant('if you have to cough, please cover your mouth', document.body);
