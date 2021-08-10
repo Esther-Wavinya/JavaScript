@@ -11,13 +11,20 @@
 // Via JS - setting the onclick property
 // **********************************
 
+ 
+
+
+
+//Right way to add events in JS
 // Select an element:
 const btn = document.querySelector('#clicker');
 
 // Set the onclick property to a function:
 
 // You can use an existing function: (not that common)
-// btn.onclick = greet; 
+btn.onclick = greet; 
+
+
 
 // Or use an anonymous function (more common)
 btn.onclick = () => {
