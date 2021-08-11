@@ -2,7 +2,7 @@
 //PROMISES - A PATTERN for writing async code
 //RESOLVE    REJECT
 //A promise is a returned object to which you attach callbacks, instead of passing callbacks into a function
-
+//Every promise has a .then method
 
 const willGetYouADog = new Promise((resolve, reject) => {
 	const rand = Math.random();
