@@ -4,6 +4,10 @@
  * JavaScript
  * And
  * Json/XML
+ * XMLHttpRequaest - The original way of sending requests via Js
+ * Dpes not support promises, so...lots of callbacks!
+ * WTF is going on with the weird capitalization
+ * Clunky syntax that I find difficult to remember
  */
 
 const firstReq = new XMLHttpRequest();
