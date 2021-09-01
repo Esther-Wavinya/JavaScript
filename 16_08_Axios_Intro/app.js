@@ -8,6 +8,7 @@
  * cancel requests
  * Automatic transforms for JSON data
  * Client side support for protecting against XSRF
+ * Include it in index.html
  */
 
 axios
