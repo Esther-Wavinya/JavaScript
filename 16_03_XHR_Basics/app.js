@@ -1,3 +1,11 @@
+/**
+ * AJAX
+ * Asychronous
+ * JavaScript
+ * And
+ * Json/XML
+ */
+
 const firstReq = new XMLHttpRequest();
 firstReq.addEventListener('load', function() {
 	console.log('IT WORKED!!!');
